@@ -6,7 +6,7 @@
 /*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/16 16:47:08 by mikim             #+#    #+#             */
-/*   Updated: 2017/03/22 18:09:18 by mikim            ###   ########.fr       */
+/*   Updated: 2017/06/14 20:21:24 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ft_fillit(char *av)
 	size += 5;
 	while (res == NULL)
 	{
-		board = ft_create_board(18);
+		board = ft_create_board(size);
 		if (ft_fill(tet, board, 2, 2))
 			res = ft_board_dup(board, ft_strlen(board[0]));
 		size++;
